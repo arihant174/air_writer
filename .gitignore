@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+*.task
+airpaint_*.png
+airwrite_*.png
+.env
