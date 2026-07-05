@@ -96,10 +96,3 @@ air-paint/
 
 ---
 
-## Interview Talking Points
-
-- **Why NumPy arrays instead of a list of particle objects?** — Vectorised operations run physics on all particles simultaneously in C, orders of magnitude faster than Python loops
-- **Why rule-based gesture recognition instead of a trained classifier?** — 21 MediaPipe landmarks are already structured; a simple geometric rule achieves >98% accuracy without needing labelled data
-- **The two-layer paint system** — Active particles move with physics; slow particles get dried onto a persistent canvas with exponential fade, mimicking real wet→dry paint behaviour
-- **Velocity inheritance** — Emitted particles inherit finger movement direction, so fast strokes produce streaks and slow strokes produce pools
-- **Real-time constraint** — every component must complete in <33ms. NumPy physics + single-canvas batch render keeps the frame loop well under budget
